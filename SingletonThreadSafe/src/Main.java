@@ -19,7 +19,7 @@ public class Main {
 		});
 	
 		t1.start();
-//		try {Thread.sleep(10);} catch (Exception e) {} one method
+//		try {Thread.sleep(10);} catch (Exception e) {} 
 		t2.start();
 		
 	}
