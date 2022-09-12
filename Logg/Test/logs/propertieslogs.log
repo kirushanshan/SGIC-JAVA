@@ -1,0 +1,5 @@
+[TRACE] 2022-09-12 07:32:58.645 [main] App - This is trace msg
+[INFO ] 2022-09-12 07:32:58.651 [main] App - This is information
+[ERROR] 2022-09-12 07:32:58.651 [main] App - this is an error message
+[WARN ] 2022-09-12 07:32:58.651 [main] App - this is a warning message
+[FATAL] 2022-09-12 07:32:58.651 [main] App - This is a fatal msg
