@@ -1,6 +1,7 @@
 package org.example;
 
 
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -19,6 +20,7 @@ public class App
         logger.error("this is an error message");
         logger.warn("this is a warning message");
         logger.fatal("This is a fatal msg");
+
         System.out.println( "Hello World!" );
     }
 }

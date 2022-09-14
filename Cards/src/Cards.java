@@ -6,7 +6,7 @@ public class Cards {
 	
 
 	
-	public static void main(String[] args) {
+	
         if (args.length < 2) {
             System.out.println("Usage: Deal hands cards");
             return;
@@ -53,12 +53,7 @@ public class Cards {
     
     
     
-	static                  //static block  
-	{  
-		String arg[] = {"1","1"};
-		Cards.main(arg);
-		main(arg);
-	}  
+
 
 
 }
