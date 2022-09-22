@@ -1,0 +1,6 @@
+127.0.0.1 - - [20/Sep/2022:11:01:55 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [20/Sep/2022:11:01:56 +0530] "GET /Student/WEB-INF/classes/Student.java HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [20/Sep/2022:11:01:56 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [20/Sep/2022:11:02:13 +0530] "GET /Student/Register.jsp HTTP/1.1" 200 3342
+0:0:0:0:0:0:0:1 - - [20/Sep/2022:11:02:29 +0530] "POST /Student/Register HTTP/1.1" 500 1374
+0:0:0:0:0:0:0:1 - - [20/Sep/2022:11:02:48 +0530] "POST /Student/Register HTTP/1.1" 200 24

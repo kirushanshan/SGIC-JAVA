@@ -1,0 +1,68 @@
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class StudentManage
+ */
+@WebServlet("/studentManage")
+public class StudentManage extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * @see HttpServlet#HttpServlet()
+	 */
+	public StudentManage() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	/**
+	 *
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+		String action = request.getParameter("action");
+		RegisterDao getDetails = new RegisterDao();
+		try {
+			if (action.equals("students")) {
+				List<Student> students = getDetails.getStudents();
+				String msg = "no students details";
+
+				if (students.size() > 0) {
+					msg = students.size() + (students.size() > 1 ? "records" : "record");
+				}
+				request.setAttribute("MSG", msg);
+				request.setAttribute("students", students);
+				request.getRequestDispatcher("view_student_details.jsp").forward(request, response);
+			}
+		} catch (Exception exception) {
+			request.setAttribute("ERROR","Error" + exception.getMessage());
+			request.getRequestDispatcher("error.jsp").forward(request, response);
+			
+		}
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}
