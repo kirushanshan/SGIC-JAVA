@@ -1,0 +1,6 @@
+Dialect is a class that acts as a bridge between Java JDBC types and SQL types
+
+Dialect allows Hibernate to generate SQL optimized for a particular relational database.
+ Hibernate generates queries for the specific database based on the Dialect class. 
+ A hibernate dialect gives information to the framework of how to convert hibernate queries(HQL) 
+ into native SQL queries

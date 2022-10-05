@@ -1,0 +1,17 @@
+Compile : default scope
+eg - log4j
+
+Provide : indicate depency provide by jdk ,wave server or wave container
+eg - : javax.servlet
+
+runtime : no need to combile time but need to execution time
+eg - com.thoughtworks.xstream
+
+test: test combilation and execute 
+eg - junit
+
+system : like provided not looked maven repostiry your custom jar
+provide by syetem path
+eg 
+
+import : only supported on a dependency of type pom in the dependencyManagement section
